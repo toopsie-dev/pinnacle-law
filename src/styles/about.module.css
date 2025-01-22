@@ -1,0 +1,37 @@
+.about {
+  background: url(/images/about-bg.jpg) no-repeat center;
+  position: relative;
+}
+.about::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.336);
+}
+.title {
+  align-items: start;
+}
+.title h3 {
+  color: white;
+}
+.title p {
+  margin-top: 40px;
+  max-width: 700px;
+  color: white;
+}
+
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+  .about {
+    background-position: 65%;
+  }
+  .about p {
+    font-size: 1em;
+    margin-top: 20px;
+  }
+  .about::before {
+    background-color: rgba(0, 0, 0, 0.692);
+  }
+}

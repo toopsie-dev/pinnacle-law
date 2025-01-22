@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --background: #ffffff;
+  --text-primary: #181c1d;
+  --text-secondary: #181c1dc9;
+  --accent: #181c1d;
+  --border: #cca776;
+  --brand: #cca776;
+}
+[data-theme="dark"] {
+  --background: #1b3147;
+  --text-primary: #f8f9fb;
+  --text-secondary: #f8f9fb;
+  --accent: #cca776;
+  --border: #16283a;
+}
+
+/* Elemet tags */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  font-family: "Kanit", serif;
+  background: var(--background);
+}
+h1 {
+  text-transform: capitalize;
+  line-height: 1.5em;
+  font-size: 90px;
+}
+h2 {
+  color: #cca776;
+  font-size: 3em;
+  text-transform: capitalize;
+}
+h3 {
+  color: var(--text-secondary);
+  font-size: 1.3em;
+  text-transform: capitalize;
+}
+h4 {
+  color: var(--text-secondary);
+  font-size: 1.3em;
+  text-transform: capitalize;
+}
+h6 {
+  color: var(--text-secondary);
+  font-size: 0.9em;
+  font-weight: 300;
+  line-height: 5px;
+  text-transform: capitalize;
+}
+p {
+  color: var(--text-primary);
+  font-size: 1.2em;
+}
+button {
+  background-color: #cca776;
+  padding: 15px 40px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: "Kanit", serif;
+  font-size: 1.2em;
+  border: 1px solid #cca776;
+  margin-top: 60px;
+  transition: 0.5s ease;
+}
+button:hover {
+  background-color: #ffffff;
+  color: var(--brand);
+  transform: translateX(20px);
+  cursor: pointer;
+}
+
+/* Classes / Id */
+.app {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+.container {
+  max-width: 1920px;
+  width: 100%;
+  padding: 120px 50px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--background);
+}
+.content {
+  width: 1550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  z-index: 10;
+}
+.brand-color {
+  color: var(--brand);
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.center {
+  align-items: center !important;
+  gap: 80px;
+}
+button.learn-more-btn {
+  margin-top: 30px !important;
+  padding: 0;
+  background: transparent;
+  border: none;
+  color: var(--brand);
+}
+button.learn-more-btn::after {
+  margin-top: 0 !important;
+  content: url(/images/arrow.png);
+  margin-left: 20px;
+}
+
+@media only screen and (max-width: 1279px) and (min-width: 769px) {
+}
+
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+}
+
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+  h1 {
+    font-size: 60px;
+    line-height: 1em;
+  }
+  h2 {
+    color: #cca776;
+    font-size: 2em;
+  }
+  h3 {
+    font-size: 1.2em;
+  }
+  h4 {
+    font-size: 1.1em;
+  }
+  p {
+    font-size: 1em;
+  }
+  button {
+    padding: 15px 35px;
+    font-size: 1em;
+    margin-top: 40px;
+  }
+  .container {
+    padding: 80px 30px;
+  }
+}
