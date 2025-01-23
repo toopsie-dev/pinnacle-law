@@ -20,7 +20,7 @@ export default function About() {
             the country and offer representation in both state and federal
             courts across the country.
           </p>
-          <button>contact us</button>
+          <button className="btn">contact us</button>
         </div>
       </div>
     </div>

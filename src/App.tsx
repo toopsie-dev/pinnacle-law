@@ -14,7 +14,10 @@ function App() {
 
   return (
     <div className="app" data-theme={theme}>
-      <button onClick={() => switchTheme(theme === "dark" ? false : true)}>
+      <button
+        className="btn"
+        onClick={() => switchTheme(theme === "dark" ? false : true)}
+      >
         Switch Theme
       </button>
       <Banner />

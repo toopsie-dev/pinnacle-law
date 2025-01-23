@@ -52,7 +52,7 @@ export default function Footer() {
               </a>
             </li>
           </ul>
-          <button className="learn-more-btn">get directions</button>
+          <button className="btn learn-more-btn">get directions</button>
         </div>
         <div>
           <h3>Miami Dade County</h3>
@@ -77,7 +77,7 @@ export default function Footer() {
               </a>
             </li>
           </ul>
-          <button className="learn-more-btn">get directions</button>
+          <button className="btn learn-more-btn">get directions</button>
         </div>
       </div>
     </div>

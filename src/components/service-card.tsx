@@ -18,7 +18,7 @@ export default function ServiceCard({ services }: ServiceCardProps) {
           <div className={style["service-content"]}>
             <h3>{service.title}</h3>
             <p>{service.description}</p>
-            <button className="learn-more-btn">learn more</button>
+            <button className="btn learn-more-btn">learn more</button>
           </div>
         </div>
       ))}

@@ -42,7 +42,9 @@ export default function Form() {
       <input type="text" name="phone" placeholder="Phone" required />
       <input type="text" name="subject" placeholder="Subject" required />
       <textarea name="message" placeholder="Message" rows={4} required />
-      <button type="submit">Submit</button>
+      <button className="btn" type="submit">
+        Submit
+      </button>
     </form>
   );
 }

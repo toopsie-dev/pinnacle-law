@@ -58,7 +58,7 @@ p {
   color: var(--text-primary);
   font-size: 1.2em;
 }
-button {
+button.btn {
   background-color: #cca776;
   padding: 15px 40px;
   color: #ffffff;
@@ -69,7 +69,7 @@ button {
   margin-top: 60px;
   transition: 0.5s ease;
 }
-button:hover {
+button.btn:hover {
   background-color: #ffffff;
   color: var(--brand);
   transform: translateX(20px);
@@ -181,10 +181,53 @@ button.learn-more-btn::after {
   fill: var(--brand);
 }
 
+/* Slick Slider */
+.slick-dots {
+  margin-top: 20px;
+  position: static !important;
+}
+.slick-track {
+  display: flex;
+  gap: 1rem;
+}
+.slick-dots li button:before {
+  color: var(--brand);
+}
+.slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: var(--brand);
+}
+ul.slick-dots li button {
+  transform: scale(1.5);
+}
+.slick-prev:before,
+.slick-next:before {
+  display: inline-block;
+  width: 30px;
+  height: 20px;
+  content: "";
+}
+.slick-prev:before {
+  /* content: url(/images/arrow-left.png); */
+  background: url("/images/arrow-left.png") no-repeat left center;
+  background-size: cover;
+}
+.slick-next:before {
+  /* content: url(/images/arrow-right.png); */
+  background: url("/images/arrow-right.png") no-repeat right center;
+  background-size: cover;
+}
+
 @media only screen and (max-width: 1279px) and (min-width: 769px) {
 }
 
 @media only screen and (max-width: 768px) and (min-width: 481px) {
+  .slick-prev:before {
+    transform: translateX(10px);
+  }
+  .slick-next:before {
+    transform: translateX(-10px);
+  }
 }
 
 @media only screen and (max-width: 480px) and (min-width: 320px) {
@@ -219,5 +262,11 @@ button.learn-more-btn::after {
   .scroll-top-icon {
     right: 30px;
     bottom: 30px;
+  }
+  .slick-prev:before {
+    transform: translateX(10px);
+  }
+  .slick-next:before {
+    transform: translateX(-10px);
   }
 }

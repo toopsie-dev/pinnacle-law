@@ -12,7 +12,7 @@ export default function Banner() {
           attorney fight for you, the better your chances of getting the proper
           care and results your are entitle to.
         </p>
-        <button>contact us</button>
+        <button className="btn">contact us</button>
       </div>
     </div>
   );
