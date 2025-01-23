@@ -19,4 +19,7 @@
   .content p {
     text-align: center;
   }
+  .content h2 {
+    line-height: 1.1em;
+  }
 }

@@ -2,6 +2,7 @@ import About from "./components/about";
 import Banner from "./components/banner";
 import Contact from "./components/contact";
 import Features from "./components/features";
+import Footer from "./components/footer";
 import Services from "./components/services";
 import Testimonials from "./components/testimonial";
 import { useThemeContext } from "./contexts/theme";
@@ -20,6 +21,7 @@ function App() {
       <About />
       <Testimonials />
       <Contact />
+      <Footer />
     </div>
   );
 }
