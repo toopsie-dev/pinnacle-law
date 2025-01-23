@@ -1,0 +1,22 @@
+.container {
+  background: url(/images/contact-bg.jpg) no-repeat center;
+  background-size: cover;
+}
+.content {
+  align-items: center !important;
+  width: 1000px !important;
+}
+.content h3 {
+  color: #ffffff;
+}
+.content p {
+  margin: 40px 0;
+  color: #ffffff;
+}
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+  .content h3,
+  .content h2,
+  .content p {
+    text-align: center;
+  }
+}

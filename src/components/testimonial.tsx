@@ -1,5 +1,3 @@
-import "slick-carousel/slick/slick-theme.css";
-import "slick-carousel/slick/slick.css";
 import style from "../styles/testimonial.module.css";
 import { Testimonial } from "../types";
 import TestimonialCard from "./testimonial-card";

@@ -1,5 +1,6 @@
 import About from "./components/about";
 import Banner from "./components/banner";
+import Contact from "./components/contact";
 import Features from "./components/features";
 import Services from "./components/services";
 import Testimonials from "./components/testimonial";
@@ -18,6 +19,7 @@ function App() {
       <Services />
       <About />
       <Testimonials />
+      <Contact />
     </div>
   );
 }
