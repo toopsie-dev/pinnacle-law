@@ -21,7 +21,7 @@ export default function Testimonials() {
   ];
 
   return (
-    <div className={style.container}>
+    <div id="testimonial" className={style.container}>
       <div className={style.content}>
         <h3>testimonials</h3>
         <h2>what our client says</h2>

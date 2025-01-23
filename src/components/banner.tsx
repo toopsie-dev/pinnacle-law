@@ -2,7 +2,7 @@ import style from "../styles/banner.module.css";
 
 export default function Banner() {
   return (
-    <div id="banner" className={`container ${style.container}`}>
+    <div id="home" className={`container ${style.container}`}>
       <div className="content">
         <h1>
           get <span className="brand-color">started</span>

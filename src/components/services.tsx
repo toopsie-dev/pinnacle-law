@@ -42,7 +42,7 @@ export default function Services() {
     },
   ];
   return (
-    <div className="container">
+    <div id="services" className="container">
       <div className="content center">
         <div className={`title ${style.title}`}>
           <h3>Our Services</h3>

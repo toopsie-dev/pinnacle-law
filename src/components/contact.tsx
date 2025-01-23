@@ -3,7 +3,7 @@ import Form from "./form";
 
 export default function Contact() {
   return (
-    <div className={`container ${style.container}`}>
+    <div id="contact" className={`container ${style.container}`}>
       <div className={`content ${style.content}`}>
         <h3>Contact Us</h3>
         <h2>Request a Free Consultation</h2>
