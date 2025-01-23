@@ -21,7 +21,7 @@ h5 {
   font-size: 1em;
 }
 a {
-  font-size: 1.1em;
+  font-size: 1em;
 }
 a:hover {
   color: var(--brand);
@@ -81,6 +81,7 @@ ul {
 @media only screen and (max-width: 600px) and (min-width: 320px) {
   .content {
     gap: 50px;
+    flex-wrap: wrap;
   }
   .content div {
     width: 100% !important;
