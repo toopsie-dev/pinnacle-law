@@ -55,7 +55,7 @@ export default function Navbar() {
         <div className={style["logo-container"]}>
           <img
             className={isSticky ? style["shrink-logo"] : ""}
-            src="/images/logo.png"
+            src="./images/logo.png"
             alt="Pinnacle law logo"
           />
         </div>
