@@ -153,6 +153,9 @@ button.learn-more-btn {
   border: none;
   color: var(--brand);
 }
+button.learn-more-btn:hover {
+  background: transparent !important;
+}
 button.learn-more-btn::after {
   margin-top: 0 !important;
   content: url(/images/arrow.png);
@@ -209,12 +212,10 @@ ul.slick-dots li button {
   content: "";
 }
 .slick-prev:before {
-  /* content: url(/images/arrow-left.png); */
   background: url("/images/arrow-left.png") no-repeat left center;
   background-size: cover;
 }
 .slick-next:before {
-  /* content: url(/images/arrow-right.png); */
   background: url("/images/arrow-right.png") no-repeat right center;
   background-size: cover;
 }

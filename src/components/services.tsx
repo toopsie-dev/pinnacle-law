@@ -18,7 +18,7 @@ export default function Services() {
     },
     {
       image_url: "./images/service-3.png",
-      title: "Buseness Law",
+      title: "Business Law",
       description:
         "A business lawyer is a professional who helps small and large businesses with drafting and reviewing contracts, or facing legal issues like lawsuits, regulatory compliance or intellectual property protection issues.",
     },
