@@ -1,6 +1,6 @@
 {
-  "homepage": "https://toopsie-dev.github.io/pinnacle-law",
   "name": "pinnacle-law",
+  "homepage": "https://toopsie-dev.github.io/pinnacle-law",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
