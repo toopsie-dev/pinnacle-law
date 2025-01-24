@@ -1,6 +1,10 @@
 import style from "../styles/banner.module.css";
 
 export default function Banner() {
+  const redirectContactSection = () => {
+    window.location.href = "#contact";
+  };
+
   return (
     <div id="home" className={`container ${style.container}`}>
       <div className="content">
@@ -12,7 +16,9 @@ export default function Banner() {
           attorney fight for you, the better your chances of getting the proper
           care and results your are entitle to.
         </p>
-        <button className="btn">contact us</button>
+        <button onClick={redirectContactSection} className="btn">
+          contact us
+        </button>
       </div>
     </div>
   );

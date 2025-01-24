@@ -1,6 +1,10 @@
 import style from "../styles/about.module.css";
 
 export default function About() {
+  const redirectContactSection = () => {
+    window.location.href = "#contact";
+  };
+
   return (
     <div id="about" className={`container ${style.about}`}>
       <div className="content">
@@ -20,7 +24,9 @@ export default function About() {
             the country and offer representation in both state and federal
             courts across the country.
           </p>
-          <button className="btn">contact us</button>
+          <button onClick={redirectContactSection} className="btn">
+            contact us
+          </button>
         </div>
       </div>
     </div>
