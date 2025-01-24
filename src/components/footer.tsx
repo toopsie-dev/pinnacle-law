@@ -5,7 +5,7 @@ export default function Footer() {
     <div className={`container ${style.container}`}>
       <div className={`content ${style.content}`}>
         <div>
-          <img src="/images/logo.png" alt="" />
+          <img src="./images/logo.png" alt="" />
           <p>
             The Pinnacle Law Group aims to be the preeminent full service law
             firm in south Florida.
@@ -13,12 +13,12 @@ export default function Footer() {
           <ul>
             <li>
               <a href="https://www.facebook.com/lilismelvin07" target="_blank">
-                <img src="/images/fb-icon.png" alt="" />
+                <img src="./images/fb-icon.png" alt="" />
               </a>
             </li>
             <li>
               <a href="https://www.instagram.com/yaksu07/" target="_blank">
-                <img src="/images/instagram-icon.png" alt="" />
+                <img src="./images/instagram-icon.png" alt="" />
               </a>
             </li>
           </ul>

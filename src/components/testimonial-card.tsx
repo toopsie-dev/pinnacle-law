@@ -24,7 +24,7 @@ export default function TestimonialCard({
       <Slider {...settings}>
         {testimonials.map((prop, index) => (
           <div key={index} className={style["testimonial-card"]}>
-            <img src="/images/quote.png" alt="Double quote" />
+            <img src="./images/quote.png" alt="Double quote" />
             <p>{prop.testimonial}</p>
             <img src={prop.image_url} alt={prop.name} />
             <h4>{prop.name}</h4>
