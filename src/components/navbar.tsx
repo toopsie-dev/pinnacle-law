@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 import { FiMoon } from "react-icons/fi";
 import { ImSun } from "react-icons/im";
+import { IoMdClose } from "react-icons/io";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { useNavContext } from "../contexts/navigation";
 import { useThemeContext } from "../contexts/theme";
@@ -10,10 +11,30 @@ import style from "../styles/navbar.module.css";
 
 export default function Navbar() {
   const { theme, switchTheme } = useThemeContext();
-  const { isSticky, isMobile, handleScroll, handleMenu } = useNavContext();
+  const {
+    isSticky,
+    showSidebar,
+    isMobile,
+    handleScroll,
+    handleMenu,
+    handleShowSidebar,
+  } = useNavContext();
 
   const isWindowScroll = () => {
     handleScroll(window.pageYOffset > 0 ? true : false);
+  };
+
+  const toogleSidebar = () => {
+    const sidebar = document.querySelector("#sidebar") as HTMLElement | null;
+
+    if (!showSidebar) {
+      if (sidebar) {
+        sidebar?.style.setProperty("display", "flex");
+      }
+    } else {
+      sidebar?.style.setProperty("display", "none");
+    }
+    handleShowSidebar();
   };
 
   useEffect(() => {
@@ -38,8 +59,26 @@ export default function Navbar() {
             alt="Pinnacle law logo"
           />
         </div>
-        <div className={style["navigation-container"]}>
-          {isMobile && <RxHamburgerMenu />}
+        {isMobile ? (
+          <RxHamburgerMenu size={35} color="#cca776" onClick={toogleSidebar} />
+        ) : (
+          ""
+        )}
+        <div
+          id="sidebar"
+          className={
+            !isMobile
+              ? style["navigation-container"]
+              : style["sidebar-container"]
+          }
+        >
+          <div className={style["menu"]}>
+            {isMobile ? (
+              <IoMdClose size={35} color="#cca776" onClick={toogleSidebar} />
+            ) : (
+              ""
+            )}
+          </div>
           <ul>
             <li>
               <a href="#home">Home</a>

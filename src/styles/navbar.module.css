@@ -39,7 +39,7 @@
   margin-left: 20px;
 }
 .sticky {
-  background-color: #1b3147;
+  background-color: #404449;
   padding: 20px 50px;
   transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
@@ -52,10 +52,62 @@
 .sticky a {
   font-size: 1em !important;
 }
+.sidebar-container {
+  position: fixed;
+  right: 0;
+  top: 0;
+  max-width: 350px;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.281);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(100px);
+  display: none;
+  flex-direction: column;
+  z-index: 999 !important;
+}
+.sidebar-container ul {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.sidebar-container .menu {
+  align-self: flex-end !important;
+  padding: 30px;
+}
+.sidebar-container ul li {
+  font-size: 1.2em;
+}
 
 @media only screen and (max-width: 1279px) and (min-width: 951px) {
   .logo-container img {
     max-width: 240px;
+  }
+  .navigation-container ul li a {
+    font-size: 1.1em;
+  }
+}
+
+@media only screen and (max-width: 425px) and (min-width: 320px) {
+  .container {
+    padding: 20px 30px;
+  }
+  .logo-container img {
+    max-width: 200px;
+  }
+  .sticky {
+    background-color: #404449;
+    padding: 20px 20px;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+  }
+  .shrink-logo {
+    width: 150px !important;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
   }
   .navigation-container ul li a {
     font-size: 1.1em;

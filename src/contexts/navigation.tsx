@@ -5,15 +5,19 @@ import { createContext, useContext, useState } from "react";
 export type NavContextProps = {
   isSticky: boolean;
   isMobile: boolean;
+  showSidebar: boolean;
   handleScroll: (isSticky: boolean) => void;
   handleMenu: (isMobile: boolean) => void;
+  handleShowSidebar: () => void;
 };
 
 export const NavContext = createContext<NavContextProps>({
   isSticky: false,
   isMobile: false,
+  showSidebar: false,
   handleScroll: (_isSticky: boolean) => undefined,
   handleMenu: (_isMobile: boolean) => undefined,
+  handleShowSidebar: () => undefined,
 });
 
 export type NavContextProviderProps = {
@@ -23,6 +27,7 @@ export type NavContextProviderProps = {
 export function NavContextProvider({ children }: NavContextProviderProps) {
   const [isSticky, setIsSticky] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const [showSidebar, setShowSidebar] = useState(false);
 
   const handleScroll = (_isSticky: boolean) => {
     setIsSticky(_isSticky);
@@ -32,11 +37,17 @@ export function NavContextProvider({ children }: NavContextProviderProps) {
     setIsMobile(_isMobile);
   };
 
+  const handleShowSidebar = () => {
+    setShowSidebar(!showSidebar);
+  };
+
   const contextValue: NavContextProps = {
     isSticky,
     isMobile,
+    showSidebar,
     handleScroll,
     handleMenu,
+    handleShowSidebar,
   };
 
   return (
